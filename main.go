@@ -15,10 +15,6 @@ const (
 )
 
 func main() {
-	run()
-}
-
-func run() {
 	var (
 		dodosuko     = []string{dodo, suko}
 		matchPattern = "011101110111"
@@ -29,7 +25,7 @@ func run() {
 	for {
 		var generatedPhrase, generatedPattern bytes.Buffer
 		for i := 0; i < utf8.RuneCountInString(matchPattern); i++ {
-			randomNum := rand.Intn(len(dodosuko))
+			randomNum := rand.Intn(2)
 
 			generatedPhrase.WriteString(dodosuko[randomNum])
 			generatedPattern.WriteString(strconv.Itoa(randomNum))
