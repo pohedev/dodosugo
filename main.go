@@ -9,14 +9,9 @@ import (
 	"unicode/utf8"
 )
 
-const (
-	dodo = "ドド"
-	suko = "スコ"
-)
-
 func main() {
 	var (
-		dodosuko     = []string{dodo, suko}
+		dodosuko     = []string{"ドド", "スコ"}
 		matchPattern = "011101110111"
 	)
 
